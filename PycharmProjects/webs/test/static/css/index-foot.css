@@ -1,0 +1,31 @@
+.footer{
+    margin: 0 auto;
+    width: 1016px;
+    font-size: 12px;
+    padding: 0 28px;
+    background-color: #fff;
+    overflow: hidden;
+}
+/*文字超链接部分*/
+.footer .foot-nav{
+    padding-top: 15px;
+    text-align: center;
+    border-top: 1px solid #CCDCEF;
+    position: relative;
+}
+
+.footer .foot-nav a{
+    color: #369;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+}
+.footer .foot-nav a:hover{
+    text-decoration: underline;
+}
+/*备案信息部分*/
+.footer .foot-nav2{
+    margin-top: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+}

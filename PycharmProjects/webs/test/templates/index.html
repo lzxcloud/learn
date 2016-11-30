@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="http://dig.chouti.com/images/chouti.ico">
+    <title>抽屉新热榜-聚合每日热门、搞笑、有趣资讯</title>
+    <script src="../static/js/index.js"></script>
+    <link type="text/css" rel="stylesheet" href="../static/plugins/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+    <link type="text/css" rel="stylesheet" href="../static/plugins/bootstrap-3.3.7-dist/css/bootstrap-theme.css"/>
+    <link type="text/css" rel="stylesheet" href="../static/css/index-top.css" />
+    <link type="text/css" rel="stylesheet" href="../static/css/index-center.css" />
+    <link type="text/css" rel="stylesheet" href="../static/css/index-foot.css"/>
+</head>
+<body>
+    <div class="top">
+        <div class="head-menu">
+            <div class="logo">
+                <a href="index.html"></a>
+            </div>
+            <ul>
+                <li style="background-color: #204982;height: 44px"><a href="index.html" >全部</a></li>
+                <li><a href="index.html">42区</a></li>
+                <li><a href="index.html">段子</a></li>
+                <li><a href="index.html">图片</a></li>
+                <li><a href="index.html" >挨踢1024</a></li>
+                <li><a href="index.html">你问我答</a></li>
+            </ul>
+            <div class="account">
+                <form action="#" method="post" name ="search">
+                    <input type="text" class="search-txt-s" name="words" id="txtSearch2" autocomplete="off">
+                    <input type="hidden" value="1" id="page" name="page">
+                </form>
+                {%if state %}
+                    <ul>
+                        <li>
+                            <a href="/index" style="width: 54px"> {{username}}</a>
+                            <ul style="position: absolute;top: 44px;" id="option">
+                                <li style="position: relative;float:left;left: -20px">
+                                    <a href="/logout">退出</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>退出</a>
+                        </li>
+                    </ul>
+                {%else%}
+                    <ul>
+                        <li><a onclick="login();return false">登录</a></li>
+                        <li><a onclick="login();return false">注册</a></li>
+                    </ul>
+                {%end%}
+            </div>
+
+        </div>
+    </div>
+    <div class="center">
+        <div class="w">
+            <div class="main-content">
+                <div class="content-l">
+                    <div class="nav-top-area">
+                            <div class ="child-nav">
+                                <a href="#" id="hotts-nav-btn">最热</a>
+                                <a href="#">最新</a>
+                                <a href="#">人类发布</a>
+                            </div>
+                            <div class="sort-nav">
+                                <a href="#" style="color: #390;width: 19.55px ;margin-top: 1px">3天</a>
+                                <a href="#" style="color:#390;width: 38.09px;margin-left: 10px;margin-top: 1px">24小时</a>
+                                <a href="#" style="color: #b4b4b4;width: 48px;margin-left: 10px">既时排序</a>
+                            </div>
+                            {%if state %}
+                                <a class="publish-btn" onclick="pub();return false">
+                            {%else%}
+                                <a class="publish-btn" onclick="error_pub();return false">
+                            {%end%}
+                                <span class="icon1"></span>
+                                <span class="n2">发布</span>
+                                <!--class="btn btn-primary"-->
+                            </a>
+                    </div>
+                <div class="yellow-comment-msg-box">
+                         <em>51</em>
+                         <span>条入热榜，点击查看</span>
+                </div>
+                <div class="content-list">
+                    {%for news in news_list%}
+                    <div class="item">
+                        <div class="news-pic">
+                            <img src="../static/img/1.jpg" >
+                        </div>
+                        <div class="new-content">
+                            <div class="part1">
+                                <a href="#" class="n1">{{news["title"]}} </a>
+                                <span>-news.mydrivers.com</span>
+                                <a href="#" class="n2"><span>挨踢1024</span></a>
+                            </div>
+                            <div class="area-summary">
+                                <span class="summary">
+                                 {{news["content"]}}
+                                </span>
+                            </div>
+                            <div class="part2">
+                                <a href="#" class="digg-a">
+                                    <span></span>
+                                    <b style=>52</b>
+                                </a>
+                                <a href="#"  class="discus-a">
+                                    <span></span>
+                                    <b>42</b>
+                                </a>
+                                <a href="#" class="collect-a">
+                                    <span></span>
+                                    <b>私藏</b>
+                                </a>
+                                <a href="#" class="user-a">
+                                    <span>
+                                        <img src="../static/img/user.jpg">
+                                    </span>
+                                    <b>一个不正经的科技狂人</b>
+                                </a>
+                                <span class="left-time-into">
+                                    <span style="color:#99AECB" class="span"></span>
+                                    <a href="#" style="display: inline-block"><b>23小时46分钟前</b></a>
+                                    <i>发布</i>
+                                </span>
+                                <span class="share-site-to">
+                                    <i>分享到</i>
+                                   <span class="share-icon" style="vertical-align: 2px;" >
+                                       <a href="#" class="icon-sina" title="分享到新浪微博"></a>
+                                       <a href="#" class="icon-douban" title="分享到豆瓣"></a>
+                                       <a href="#" class="icon-qqzone" title="分享到QQ空间"></a>
+                                       <a href="#" class="icon-tenxun" title="分享到腾讯微博"></a>
+                                       <a href="#" class="icon-renren" title="分享到人人网"></a>
+                                       <a class="share-none"> </a>
+                                   </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    {%end%}
+                </div>
+                    <div class="no-buttom"></div>
+                    <div class="page-area">
+					    <div class="dig_lcpage">
+                            <ul>
+                                <li><span class="ct_pagepw">1</span></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">6</a></li>
+                                <li><a href="#">7</a></li>
+                                <li><a href="#">8</a></li>
+                                <li><a href="#">9</a></li>
+                                <li><a href="#">10</a></li>
+                                <li><a href="#" style="margin-right: 9px;width: 77px;font-weight: 400;">下一页</a></li>
+                            </ul>
+                        </div>
+			        </div>
+                </div>
+                <div class="content-r">
+                    <div class="chat"></div>
+                        <div class="chat-box">
+                            <div class="chat-main-box"></div>
+                                <div class="chat-main-header">
+                                    <div class="tab-public-active" style="width:100%;border-top-radius:4px;">公共聊天</div>
+                                </div>
+                                <div class="chat-public-box"></div>
+                        </div>
+                    <div  class="btn-notice">
+                        <a href="#" >如何避免自己被封号</a>
+                    </div>
+                    <div style="width:300px;height:190px;margin-top:12px;overflow:hidden;width: 300px;height:190px;position: relative">
+                        <a href="#" id ="download_bg"></a>
+                        <a href="#" id="download_iphone"></a>
+                        <a href="#" id="download_android"></a>
+                        <a href="#" id="download_wphone"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="foot-nav">
+	        <a href="#">关于我们</a><span>|</span>
+            <a href="#">联系我们</a><span>|</span>
+            <a href="#">服务条款</a><span>|</span>
+            <a href="#">隐私政策</a><span>|</span>
+            <a href="#">抽屉新热榜工具</a><span>|</span>
+            <a href="#">下载客户端</a><span>|</span>
+            <a href="#">意见与反馈</a><span>|</span>
+            <a href="#">友情链接</a><span>|</span>
+            <a href="http://www.shouye.com/Index.do?method=show&amp;pageId=44251&amp;jid=xinrebang@gozap.com" target="_blank">公告</a>
+	        <a href="#"style="margin-left:0;vertical-align:-2px;" title="Rss订阅，Feed地址：http://dig.chouti.com/feed.xml">
+                <img src="../static/img/ct_rss.gif" width="36" height="14">
+            </a>
+        </div>
+        <div class="foot-nav2">
+	        <a target="_blank" href="http://www.gozap.com/"><img class="foot_e" src="../static/img/gozap-logo.gif"></a>
+            <span class="foot_d">旗下站点</span>
+            <span class="foot_a">© 2016 chouti.com</span>
+            <a target="_blank" href="http://www.miibeian.gov.cn/" class="foot_b">京ICP备09053974号-3 京公网安备 110102004562</a>
+            <div style="margin-top:6px;">版权所有：北京格致璞科技有限公司</div>
+        </div>
+    </div>
+    <!--登录model对话框-->
+    <div class="modal fade bs-example-modal-sm" id = "login" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <h1 align="center">登录</h1>
+
+                    <input type="text" name="username"  id="username" placeholder="用户名">
+                    <input type="password" name="passwd" id="passwd" placeholder="密码" >
+                    <input type="checkbox" value="1" name="auto" id="auto">7天免登陆
+                    <button type="button" class="btn btn-primary" onclick="loginpush()">登录</button>
+            </div>
+        </div>
+    </div>
+    <!--登录model对话框-->
+    <!--发布model对话框-->
+    <div class="modal fade" id="pub" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">创建新文章</h4>
+            </div>
+            <div class="modal-body">
+                <form action="/Publish" method="post" id="publish">
+                <div class="form-group">
+                    <label for="recipient-name" class="control-label">文章标题:</label>
+                    <input type="text" class="form-control" name="title" id="recipient-name">
+                </div>
+                <div class="form-group">
+                    <label for="message-text" class="control-label">文章内容</label>
+                    <textarea class="form-control" name ="news-text">请输入内容</textarea>
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" onclick="push()">Send message</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="../static/js/jquery-3.1.1.min.js"></script>
+    <script src="../static/plugins/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="../static/js/index.js"></script>
+    <script>
+        function error_pub() {
+            window.alert("您还没有登录!");
+        }
+        function push() {
+            $("#publish").submit();
+        }
+
+        function loginpush() {
+            $.post('/login',{"username":$("#username").val(),"passwd":$("#passwd").val(),"auto":$("#auto").val()},function (callback) {
+                var data =  $.parseJSON(callback);
+                if (data.status){
+                   location.href = "/index";
+                }
+                else{
+                    alert("用户名或密码错误!");
+                }
+            });
+        }
+    </script>
+</body>
+</html>

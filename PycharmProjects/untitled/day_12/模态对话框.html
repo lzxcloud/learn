@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .body{
+            margin: 0;
+        }
+        .mode1{
+            margin: 0;
+            position: fixed;
+            top:0;
+            bottom: 0;
+            left:0;
+            background: rgba(0,0,0,.5);
+            z-index: 2;
+        }
+        .content{
+            margin: 0;
+            height: 300px;
+            width: 400px;
+            background-color: white;
+            position: fixed;
+            /*定位关键*/
+            top:50%;
+            left:50%;
+            z-index: 5;
+            margin-left: -200px;
+            margin-top: -200px;
+        }
+    </style>
+</head>
+<body>
+    <div style="height: 2000px;background: red; margin: 0">
+        <h1>asdf</h1>
+    </div>
+    <div class="mode1"></div>
+    <div class="content"></div>
+</body>
+</html>

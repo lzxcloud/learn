@@ -1,0 +1,668 @@
+a{
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-decoration: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+div{display: block;
+}
+.center{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    float: left;
+    padding-top: 44px;
+}
+/*中部内容底部div*/
+.w{
+    margin: 0 auto; /*div居中*/
+    width:1016px;
+    height: auto;
+    position: relative;
+}
+/*中部内容div*/
+.main-content{
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;/*设置滚动条*/
+    height: auto;
+    min-height: 713px;
+    padding: 6px 28px 60px;
+    background-color: #fff;
+}
+.content-list{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+}
+.item{
+    margin: 0;
+    padding: 0;
+    display: block;
+    clear: both;
+    padding-top: 10px;
+    border-bottom: 1px solid #dce7f4;
+    overflow: hidden;
+    position: relative;
+    font-size: 12px;
+    color: #333;
+}
+/*中部左侧内容div*/
+.content-l{
+    width: 630px;
+    margin: 0px;
+    height: auto;
+    float: left;
+}
+.content-r{
+    width:300px;
+    height: auto;
+    margin: 0 0 0 30px;
+    padding-top: 4px;
+    float: right;
+}
+/*排序div css开始*/
+.nav-top-area{
+    width: 630px;
+    height: 43px;
+    overflow: hidden;
+    clear: both;
+    border-bottom: 1px solid #CCDCEF;
+}
+/*排序按钮css开始*/
+.child-nav{
+    float: left;
+    margin: 0px;
+    display: block;
+    width: auto;
+    height: 26px;
+}
+.child-nav  a{
+    display: inline-block;
+    margin-top: 3px;
+    margin-bottom: 13px;
+    width: 60px;
+    height: 26px;
+    line-height: 26px;
+    color: #369;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    padding: 0;
+}
+.child-nav a:hover{
+    text-decoration: underline;
+}
+#hotts-nav-btn{
+    margin: 0px;
+    height: 26px;
+    background: url("../img/tip.png") no-repeat;
+    background-position: 0px -299px;
+}
+#hotts-nav-btn:hover{
+    text-decoration: none;
+}
+/*排序按钮css结束*/
+/*时间排序按钮 css开始*/
+.sort-nav{
+    float: left;
+    margin-left: 141.17px;
+    margin-top: 10px;
+    width: 141.17px;
+    height: 14px;
+}
+.sort-nav  a{
+    float: right;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 10px;
+    height: 14px;
+}
+.sort-nav a:hover{
+    text-decoration: underline;
+}
+/*时间排序按钮 css结束*/
+/*发布按钮div css开始*/
+.publish-btn {
+    float: right;
+    background-color:#84A42B;
+    border: 1px solid #8aab30 ;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    width: 134px;
+    font-size: 14px;
+    text-align: center;
+    word-wrap: break-word;
+    text-decoration: none;
+}
+/*加号*/
+.publish-btn .icon1{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 12px;
+    width: 11px;
+    /*应为html是流式读取因此background要写在*/
+    /*background-position前面*/
+    background: url("../img/icon.png");
+    background-position: 0 -184px;
+
+}
+/*发布文字*/
+.publish-btn .n2{
+    font-weight: 400;
+    margin-left: 8px;
+}
+.publish-btn:hover{
+    text-decoration: none;
+    background-color: #8eb031;
+}
+.publish-btn:hover .icon1{
+    background: url("../img/icon.png");
+    background-position: 0 -210px;
+}
+/*发布按钮div css结束*/
+/*排序div css结束*/
+/*黄色入榜提示栏 css开始*/
+.content-l .yellow-comment-msg-box{
+    display: block;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    height: 25px;
+    line-height: 25px;
+    border:1px solid #fbe9c0;
+    background-color: #fff9e2;
+    color: #d47f39;
+    width: 628px;
+    text-align: center;
+    text-indent: 10px;
+    text-decoration: none;
+    font-size: 12px;
+}
+.content-l .yellow-comment-msg-box:hover{
+    border:1px solid #f9dda7;
+    background-color: #fff6d2;
+    color: #d47f39;
+    cursor: pointer;
+    text-decoration: underline;
+}
+/*黄色入榜提示栏*css 结束*/
+/*新闻内容div大 css*/
+.content-list{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+}
+/*新闻内容div css*/
+.item{
+    margin: 0;
+    padding: 0;
+    display: block;
+    clear: both;
+    padding-top: 10px;
+    border-bottom: 1px solid #dce7f4;
+    overflow: hidden;
+    position: relative;
+    font-size: 12px;
+    color: #333;
+}
+.content-list{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+    font-size: 12px;
+    color: #333;
+}
+.content-list .item{
+    width: 630px;
+    height: 100px;
+    clear: both;
+    padding-top: 10px;
+    border-bottom: 1px solid #dce7f4;
+    overflow: hidden;
+}
+/*新闻内容图片div css*/
+.item .news-pic{
+    float: right;
+    margin-left: 10px;
+    padding-bottom: 5px;
+    display: block;
+}
+.item .news-pic img{
+    display: inline;
+    cursor: -webkit-zoom-in;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1px;
+    vertical-align: top;
+}
+.item .new-content{
+    padding-top: 1px;
+    width: 630px;
+    height: 77px;
+}
+/*文字内容css*/
+.item .new-content .part1{
+    line-height: 20px;
+    display: block;
+    width: 630px;
+    height: 21px;
+}
+.item .new-content .part1 a.n1{
+    text-decoration: none;
+    font-size: 14px;
+    color: #369;
+    font-weight: 700;
+}
+.item .new-content .part1 span{
+    color: #b4b4b4;
+    margin-left: 7px;
+}
+.item .new-content .part1 a.n2{
+    font-size: 12px;
+    color: #b4b4b4;
+    text-decoration: underline;
+    margin-left: 7px;
+    vertical-align: 1px;
+    cursor: pointer;
+}
+.item .new-content .part2 {
+    width: 630px;
+    height: 55px;
+    padding-top: 16px;
+    color: #ccc;
+}
+.item .new-content .part2 span{
+    display: inline-block;
+}
+/*图标digg-a css开始*/
+.item .new-content .part2 .digg-a{
+    cursor: pointer;
+    min-width: 54px;
+    display: inline-block;
+    text-decoration: none;
+}
+.item .new-content .part2 .digg-a span{
+    background: url("../img/icon_18_118.png") no-repeat;
+    background-position: 0 -40px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+}
+.item .new-content .part2 .digg-a b{
+    color: #99AECB;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 7px;
+    vertical-align: 4px;
+
+}
+.item .new-content .part2 .digg-a span:hover{
+    background-position: 0 -20px;
+}
+.item .new-content .part2 .digg-a b:hover{
+    text-decoration: underline;
+}
+/*图标digg-a css结束*/
+/*图标discus-a css开始*/
+.item .new-content .part2 .discus-a{
+    cursor: pointer;
+    min-width: 54px;
+    display: inline-block;
+    text-decoration: none;
+}
+.item .new-content .part2 .discus-a span{
+    background: url("../img/icon_18_118.png") no-repeat;
+    background-position: 0 -100px;
+    width: 18px;
+    height: 18px;
+    vertical-align: -1px;
+}
+.item .new-content .part2 .discus-a b{
+    color: #99AECB;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 7px;
+    vertical-align: 4px;
+}
+.item .new-content .part2 .discus-a span:hover{
+    background-position: 0 -80px;
+}
+.item .new-content .part2 .discus-a b:hover{
+    text-decoration: underline;
+}
+/*图标discus-a css结束*/
+/*图标collect-a css开始*/
+.item .new-content .part2 .collect-a {
+    cursor: pointer;
+    width: 69px;
+    display: inline-block;
+    text-decoration: none;
+}
+.item .new-content .part2 .collect-a span{
+    background: url("../img/icon_18_118.png") no-repeat;
+    background-position: 0 -160px;
+    width: 18px;
+    height: 18px;
+}
+.item .new-content .part2 .collect-a b{
+    color: #99aecb;
+    font-size: 12px;
+    vertical-align: 4px;
+    font-weight: 400;
+    margin-left: 7px;
+}
+.item .new-content .part2 .collect-a span:hover{
+    background-position: 0 -140px;
+}
+.item .new-content .part2 .collect-a b:hover {
+    text-decoration: underline;
+}
+/*图标collect-a css结束*/
+/*图标user-a css开始*/
+.item .new-content .part2 .user-a{
+    display: inline-block;
+}
+.item .new-content .part2 img{
+    width: 15px;
+    height: 15px;
+    padding: 1px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.item .new-content .part2 .user-a b{
+    color: #99aecb;
+    vertical-align: 4px;
+    margin-left: 4px;
+}
+.item .new-content .part2 .user-a b:hover{
+    text-decoration: underline;
+}
+/*图标user-a css结束*/
+/*时间标签left time-into css开始 */
+.item .new-content .part2 .left-time-into {
+    color: #ccc;
+    display: inline-block;
+    margin-left: 7px;
+    clear: right;
+}
+.item .new-content .part2 .left-time-into b{
+    color: #e59373;
+    margin-left: 0;
+    font-weight: 400;
+    vertical-align: 4px;
+}
+.item .new-content .part2 .left-time-into i{
+    font-weight: 400;
+    vertical-align: 4px;
+}
+.item .new-content .part2 .left-time-into b:hover{
+    text-decoration: underline;
+}
+/*时间标签left time-into css结束 */
+/*分享部分 css开始*/
+
+.item .new-content .part2 .share-site-to{
+    color: #ccc;
+    height: 20px;
+    margin-top: -2px;
+    visibility: hidden;
+}
+
+.item .new-content .part2 .share-site-to i{
+    vertical-align: 4px;
+    margin-right: 5px;
+    font-style: normal;
+}
+.item .new-content .part2 .share-site-to a{
+    display: inline-block;
+}
+.item .new-content .part2 .share-site-to a:hover{
+    opacity: 1;
+}
+
+/*分享到新浪*/
+.item .new-content .part2 .share-site-to .icon-sina{
+    background: url("../img/share_icon.png") no-repeat;
+    margin-right: 7px;
+    margin-top: 2px;
+    opacity: .3;
+    background-position: 0 -90px;
+    width: 17px;
+    height: 14px;
+    font-size: 12px;
+}
+/*分享到豆瓣*/
+.item .new-content .part2 .share-site-to .icon-douban{
+    background: url("../img/share_icon.png") no-repeat;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    margin-right: 7px;
+    margin-top: 2px;
+    opacity: .3;
+    background-position: 0 -105px;
+    font-size: 12px;
+}
+/*分享到qq空间*/
+.item .new-content .part2 .share-site-to .icon-qqzone{
+    background: url("../img/share_icon.png") no-repeat;
+    margin-right: 7px;
+    margin-top: 2px;
+    opacity: .3;
+    background-position: 0 -120px;
+    width: 16px;
+    height: 14px;
+}
+/*分享到腾讯微博*/
+.item .new-content .part2 .share-site-to .icon-tenxun {
+    background: url("../img/share_icon.png") no-repeat;
+    width: 13px;
+    height: 13px;
+    margin-right: 7px;
+    margin-top: 2px;
+    opacity: .3;
+    background-position: 0 -136px;
+}
+/*分享到人人网*/
+.item .new-content .part2 .share-site-to .icon-renren{
+    background: url("../img/share_icon.png") no-repeat;
+    width: 13px;
+    height: 13px;
+    margin-right: 7px;
+    margin-top: 2px;
+    opacity: .3;
+    background-position: 0 -151px;
+}
+.item .new-content .part2 .share-site-to .share-none{
+    margin-top: 2px;
+    opacity: .3;
+    background: 0 0;
+    width: 1px;
+    margin-right: 0;
+    display: inline-block;
+}
+.item .new-content .part2:hover .share-site-to{
+    visibility: visible;
+    height: 14px;
+}
+/*分享部分 css结束*/
+/*底部数字翻页导航div css* 开始*/
+.no-buttom{
+    width: 630px;
+    height: 11px;
+    clear: both;
+    background-color: #fff;
+    overflow: hidden;
+}
+.page-area{
+    overflow: hidden;
+    clear: both;
+    margin-top: 9px;
+}
+.page-area .dig_lcpage{
+    float: left;
+}
+.page-area .dig_lcpage ul{
+    word-wrap: break-word;
+    word-break: break-all;
+    list-style: none;
+}
+.page-area .dig_lcpage li{
+    float: left;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-align: -webkit-match-parent;
+}
+.page-area .dig_lcpage .ct_pagepw{
+    font-size: 12px;
+    font-weight: 700;
+    color: #333;
+    border: 0;
+    margin-right: 6px;
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    width: 34px;
+    -webkit-border-radius: 5px;
+}
+/*具体数字链接*/
+.page-area .dig_lcpage a{
+    float: left;
+    color: #369;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    width: 34px;
+    border: 1px solid #e1e1e1;
+    -webkit-border-radius: 5px;
+    font-size: 12px;
+    margin-right: 6px;
+}
+.page-area .dig_lcpage a:hover {
+    color: #fff;
+    background-color: #369;
+    border: 1px solid #369;
+}
+/*底部数字翻页导航div css* 结束*/
+
+
+/*center-R部分*/
+/*聊天框*/
+.chat{
+    position: relative;
+}
+.chat-box {
+    position: relative;
+    width: 298px;
+    height: 480px;
+    border-radius: 4px;
+    border: 1px solid #efefef;
+    background: #f9f9f9;
+}
+.chat-main-header{
+    position: relative;
+}
+
+.chat-main-header div{
+    text-align: center;
+    color: #b3b3b3;
+    font-size: 12px;
+    background: #F2F2F2;
+    display: inline-block;
+    cursor: pointer;
+    height: 25px;
+    line-height: 25px;
+    position: absolute;
+    top: 0;
+}
+.chat-main-header .tab-public-active{
+    color: #4b4f53;
+    background: #F9F9F9;
+    width: 100%;
+    left: 0;
+
+}
+.chat-public-box{
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    height: 455px;
+}
+/*避免封号提醒*/
+.btn-notice{
+    margin-top:10px;
+}
+.btn-notice a{
+    font-size:14px;
+    font-weight:bold;
+    color:#369;
+    cursor:pointer;
+    padding-left:30px;
+    background: url("../img/view.png") no-repeat left center;
+    height:20px;display:inline-block;
+}
+.btn-notice a:hover{
+    text-decoration: underline;
+}
+/*客户端下载部分*/
+#download_bg{
+    display: block;
+    background: url("../img/download_bg.png");
+    width: 300px;
+    height: 190px;
+}
+/*#download_android, #download_android:hover, #download_iphone, #download_iphone:hover, #download_wphone, #download_wphone:hover{*/
+    /**/
+/*}*/
+#download_android, #download_iphone, #download_wphone, .tijina-box .order-by{
+    position: relative;
+    display: block;
+}
+#download_iphone{
+    background: url("../img/download_ad_icon.png");
+    background-position: 0 0;
+    width: 62px;
+    height: 62px;
+    border-width: 0;
+    left: 15px;
+    top: -109px;
+    position: relative;
+}
+#download_android{
+    background: url("../img/download_ad_icon.png");
+    float: left;
+    left: 104px;
+    top: -184px;
+    width: 86px;
+    height: 86px;
+    border-width: 0;
+    background-position: 0 -128px;
+}
+#download_wphone{
+    background: url("../img/download_ad_icon.png");
+    background-position: 0 -304px;
+    width: 62px;
+    height: 62px;
+    border-width: 0;
+    left: 225px;
+    top: -197px;
+}
+/*下载客户端部分结束*/

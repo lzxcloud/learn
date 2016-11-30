@@ -1,0 +1,381 @@
+/*上方工具栏*/
+.tools{
+    background-color: black;
+    width: 100%;
+    height: 34px;
+    margin: 0 ;
+    line-height: 34px;
+    color: #9f9f9f;
+}
+.tools .user-tools{
+    width: 1100px;
+    margin: 0 auto;
+    background-color: #000;
+    height: 34px;
+}
+.tools .user-tools a{
+    color: #9f9f9f;
+    font-size: 12px;
+}
+.tools .user-tools .new_york{
+    float: right;
+    padding-left: 5px;
+    padding-top: 3px;
+}
+.tools .user-tools .new_york a{
+    background: url("../img/nyse_icon2.png") no-repeat 0 1px;
+    padding-left: 27px;
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    width: 85px;
+    font-size: 12px;
+}
+
+.tools .user-tools .operate_nav ul{
+    float: right;
+    background-color: black;
+}
+.tools .user-tools .operate_nav li{
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    position: relative;
+    z-index: 1000;
+}
+.tools .user-tools .ddnewhead_cart{
+    background-image: none;
+}
+.tools .user-tools .operate_nav{
+    float: right;
+}
+.tools .user-tools .operate_nav li a{
+    display: block;
+    position: relative;
+    line-height: 34px;
+    padding: 0 9px 0 9px;
+}
+.tools .user-tools .operate_nav .ddnewhead_cart b{
+    color: #fa5000;
+    font: bold 12px "Arial";
+}
+/*手机当当 css开始*/
+.tools .user-tools .operate_nav .mobiedangdang a.menu_btn{
+    background: none;
+    padding: 0 9px 0 27px;
+    width: auto;
+    border: 0;
+    margin: 0;
+
+}
+.tools .user-tools .operate_nav .mobiedangdang i.icon_tel{
+    width: 11px;
+    height: 16px;
+    background: url("../img/home_sprite.png") no-repeat -40px -70px;
+    position: absolute;
+    left: 11px;
+    top: 8px;
+
+}
+.tools .user-tools .operate_nav .mobiedangdang .tel_pop{
+    width: 213px;
+    position: absolute;
+    height: 201px;
+    left: 0;
+    top: 0;
+}
+.tools .user-tools .operate_nav .mobiedangdang .title{
+    width: 57px;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 0 0 26px;
+    border-bottom: none;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px rgba(51,51,51,0.3);
+    color: #fa5000
+}
+.tools .user-tools .operate_nav .mobiedangdang .tel_pop .tel_box{
+    border: 1px solid #efefef;
+    box-shadow: 1px 1px 2px rgba(51,51,51,0.3);
+    width: 203px;
+    background: #fff;
+    height: 151px;
+    padding-left: 8px;
+    zoom: 1;
+}
+.tools .user-tools .operate_nav .mobiedangdang .tel_pop .tel_box .tel_box_li{
+    width: 98px;
+    float: left;
+}
+.tools .user-tools .operate_nav .mobiedangdang .tel_pop .tel_box .tel_box_li a{
+    padding: 8px 0;
+    text-align: center;
+    line-height: 18px;
+}
+
+
+.tools .user-tools .operate_nav .mobiedangdang .tel_pop .tel_box .tel_box_li span{
+    display: block;
+    line-height: 18px;
+    color: #646464;
+}
+.tools .user-tools .operate_nav .mobiedangdang .tel_pop .tel_box .tel_box_li img{
+    display: block;
+    width: 75px;
+    height: 75px;
+    margin: 6px auto 0;
+    font-size: 100%;
+}
+
+/*手机当当 css结束 */
+/*我的当当 css开始*/
+/*.tools .operate_nav li.my_dd a.menu_btn {*/
+        /*padding-right: 27px;*/
+        /*background: url(http://img3.ddimg.cn/00363/vph/t_b_bg.png) no-repeat right 16px;*/
+/*}*/
+.tools .operate_nav .my_dd ul{
+    position: absolute;
+    top: 34px;
+    left: 0;
+    border-top: none;
+    background-color: #000;
+    padding: 4px 0
+
+}
+.tools .operate_nav .my_dd .menu_btn{
+    padding-right: 27px;
+    background: url(http://img3.ddimg.cn/00363/vph/t_b_bg.png) no-repeat right 16px;
+}
+.tools .operate_nav .my_dd .ddnewhead_gcard_list li{
+    width: 86px;
+    background: none;
+    float: none;
+    height: 22px;
+    line-height: 22px;
+    padding: 0;
+}
+.tools .operate_nav .my_dd .ddnewhead_gcard_list a {
+    padding: 0 0 0 11px;
+    line-height: 22px;
+    height: 22px;
+    display: block;
+}
+.tools .operate_nav .my_dd .hover{
+    display: none;
+}
+/*我的当当 css结束*/
+.tools .operate_nav .VOL .menu_btn{
+    padding-right: 27px;
+    background: url(http://img3.ddimg.cn/00363/vph/t_b_bg.png) no-repeat right 16px;
+}
+
+
+
+.tools .dd_welcome {
+    padding: 5px 0 0 10px;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    float: left;
+    z-index: 50;
+}
+.tools .dd_welcome span{
+    line-height: 24px;
+}
+
+.tools a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+/*logo 和搜索部分div*/
+.head_over{
+    background: url(http://img4.ddimg.cn/header/header2012/v_index_bg.png) center top repeat;
+    min-width: 1100px;
+    position: relative;
+    z-index: 999;
+}
+.head_over .head_main{
+    height: 83px;
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 10px;
+}
+.head_over .head_main .logo_box{
+    width: 170px;
+    height: 70px;
+    margin-right: 37px;
+}
+.head_over .head_main .search_box{
+    height: 44px;
+    width: 905px;
+    zoom: 1;
+    position: absolute;
+    left: 192px;
+    top: 26px;
+}
+.head_over .head_main .search_box form{
+    border: 1px solid #d1d1d1;
+    background-color: #fff;
+    height: 42px;
+    width: 470px;
+    margin-right: 3px;
+    float: left;
+    position: relative
+}
+
+
+.head_over .head_main .search_box .label_search {
+    font-size: 14px;
+    height: 42px;
+    display: block;
+    width: 360px;
+    position: absolute;
+    left: 103px;
+    top: 0;
+    z-index: 2;
+    line-height: 42px;
+    padding-left: 7px;
+}
+.head_over .head_main .search_box .text_gray {
+    font-size: 14px;
+    margin: 0;
+    height: 18px;
+    line-height: 18px;
+    border: 0;
+    outline: 0;
+    width: 363px;
+    padding: 12px 0;
+    position: absolute;
+    left: 100px;
+    top: 0;
+    padding-left: 7px;
+}
+
+.head_over .head_main .search_box .select {
+    width: 100px;
+    position: absolute;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    text-decoration: none;
+    left: 0px;
+    top: 0;
+    cursor: pointer;
+    background-color: #fff;
+    z-index: 5;
+}
+.head_over .head_main .search_box span.icon {
+    background: url(http://img4.ddimg.cn/header/header2012/v_hd_bg1.png) 0 -34px no-repeat;
+    display: block;
+    height: 10px;
+    width: 10px;
+    line-height: 10px;
+    font-size: 0;
+    position: absolute;
+    left: 86px;
+    top: 17px;
+}
+.head_over .head_main .search_box .select .select_pop{
+    background-color: #fff;
+    width: 97px;
+    border: 1px solid #d1d1d1;
+    position: absolute;
+    top: 42px;
+    left: -1px;
+    border-top: 0;
+    display: block;
+    overflow: auto;
+    float: left;
+}
+
+.head_over .head_main .search_box .select .select_pop a {
+    display: block;
+    padding-left: 13px;
+    height: 28px;
+    line-height: 28px;
+    color: #666;
+    font-size: 12px;
+}
+.head_over .head_main .search_box .button{
+    display: block;
+    height: 44px;
+    width: 50px;
+    background: #e20052 url(http://img4.ddimg.cn/header/header2012/v_hd_bg1.png) center -62px no-repeat;
+    border: none;
+    cursor: pointer;
+    float: left;
+    margin-right: 15px;
+}
+.head_over .head_main .search_box .hot{
+    float: left;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    color: #828282;
+}
+.head_over .head_main .search_box .hot a {
+    color: #3a1638;
+    margin-right: 15px;
+    display: inline-block;
+}
+/*导航栏 li_search css*/
+.li_search {
+    position: relative;
+    z-index: 998;
+    zoom: 1;
+    width: 100%;
+    min-width: 1100px;
+
+}
+.li_search .v_nav{
+    background-color: #74086e;
+    height: 40px;
+    width: 100%;
+    zoom: 1;
+    position: relative;
+}
+.li_search .v_nav .sub{
+    width: 1100px;
+    position: relative;
+    margin: 0 auto;
+    height: 40px;
+    background-color: #74086e;
+    overflow: hidden;
+}
+.li_search .v_nav .sub ul{
+    width: 1100px;
+    height: 40px;
+}
+.li_search .v_nav .sub ul li{
+    float: left;
+}
+.li_search .v_nav .sub ul li a {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    padding: 10px 12px;
+    color: #ededed;
+    font-size: 14px;
+    text-decoration: none;
+    float: left;
+}
+.li_search .pink_line{
+    position: relative;
+    z-index: 998;
+    zoom: 1;
+    width: 100%;
+    min-width: 1100px;
+    background-color: #c70048;
+    height: 15px;
+}
+.li_search a:hover{
+    text-decoration: none;
+    background: #c70048;
+
+}
+/*导航栏 li_search css*/

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.1.1.js"></script>
+    <script>
+
+             function selectall(){
+
+                 $("table :checkbox").prop("checked",true)
+             }
+             function che(){
+
+                 $("table :checkbox").prop("checked",false)
+             }
+
+             function reverse(){
+
+
+//                 var idlist=$("table :checkbox")
+//                 for(var i=0;i<idlist.length;i++){
+//                     var element=idlist[i];
+//
+//                     var ischecked=$(element).prop("checked")
+//                     if (ischecked){
+//                         $(element).prop("checked",false)
+//                     }
+//                     else {
+//                         $(element).prop("checked",true)
+//                     }
+//
+//                 }
+
+
+
+                 $("table :checkbox").each(function(){
+                     if ($(this).prop("checked")){
+                         $(this).prop("checked",false)
+                     }
+                     else {
+                         $(this).prop("checked",true)
+                     }
+
+                 });
+
+
+
+//                 li=[10,20,30,40]
+////                 dic={name:"yuan",sex:"male"}
+//                 $.each(li,function(i,x){
+//                     console.log(i,x)
+//                 })
+
+             }
+
+    </script>
+</head>
+<body>
+
+     <button onclick="selectall();">全选</button>
+     <button onclick="che();">取消</button>
+     <button onclick="reverse();">反选</button>
+
+     <table border="1">
+         <tr>
+             <td><input type="checkbox"></td>
+             <td>111</td>
+         </tr>
+         <tr>
+             <td><input type="checkbox"></td>
+             <td>222</td>
+         </tr>
+         <tr>
+             <td><input type="checkbox"></td>
+             <td>333</td>
+         </tr>
+         <tr>
+             <td><input type="checkbox"></td>
+             <td>444</td>
+         </tr>
+     </table>
+
+
+
+</body>
+</html>

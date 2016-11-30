@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2 id="h1">移动和拷贝标签</h2>
+    <div id="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+    </div>
+    <script>
+        var h = document.getElementById("h1");
+        var c = document.getElementById("container")
+        //c.appendChild(h);
+        var nawH =h.cloneNode(true);//true 表示全部
+        c.appendChild(newH);
+    </script>
+</body>
+</html>

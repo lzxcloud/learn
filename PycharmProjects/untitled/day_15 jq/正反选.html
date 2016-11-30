@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正反选</title>
+</head>
+<body>
+    <button onclick="selectAll();">全选</button>
+    <button onclick="cancel();">取消</button>
+    <button onclick="reverse();">反选</button>
+    <table border="1">
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>1111</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>1111</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>1111</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>1111</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>1111</td>
+        </tr>
+    </table>
+    <script src="jquery-3.1.1.js"></script>
+    <script>
+
+        function selectAll() {
+//            后代
+            $("table :checkbox").prop("checked",true);
+
+        }
+        function cancel() {
+            $("table :checkbox").prop("checked",false);
+        }
+
+
+        function reverse() {
+            $("table :checkbox").each(function(){
+                if ($(this).prop("checked")){
+                    $(this).prop("checked",false)
+                }
+                else {
+                    $(this).prop("checked",true)
+                }
+            });
+        }
+    </script>
+</body>
+</html>

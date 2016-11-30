@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+div{
+    display: block;
+}
+body, button, ol, ul, li, p, dl, dd, h1, h2, h3, h4, h5, h6, img, iframe, input, form, textarea{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border: 0;
+    font-size: 12px;
+}
+a {
+    text-decoration: none;
+}
+ul{zoom: 1;}
+form{
+    display: block;
+    margin-top: 0em;
+}
+.hide{
+    display: none;
+}
+
+.error{
+    border:1px solid greenyellow;
+}

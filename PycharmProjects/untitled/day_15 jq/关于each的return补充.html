@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="jquery-3.1.1.js"></script>
+<script>
+
+//    //return 是当前函数去return
+//    function f1() {
+//        var li = [11,22,33];
+//        $.each(li,function (k,v) {
+//            console.log((k));
+//            if(k==1){
+//                return false;
+//            console.log((k));
+//            }
+//            return;
+//            console.log("112312312")
+//        });
+//
+//        console.log('end')
+//    }
+//    f1()
+
+    //1 $.each return,和外层函数无关
+    //2 $.each return false 表示each 跳出 下面有代码不执行
+
+//同等于
+    function myeach(obj,func) {
+        for(var i=0;i<obj.length;i++){
+            var current = obj[i];
+            var ret = func(i,current); //给匿名函数传入参数
+            if (ret =="false")
+                break;
+        }
+    }
+    var li = [11,22,33];
+    myeach(li,function (k,v) {
+        console.log(k,v);
+        return "false";
+    })
+    
+    
+</script>
+</body>
+</html>

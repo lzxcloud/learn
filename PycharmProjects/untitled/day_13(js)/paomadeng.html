@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="i1" style="background-color: red;color: white;font-size: 54px;text-align: center">欢迎莅临指导</div>
+
+    <script>
+
+        setInterval(function () {
+            d1 = document.getElementById("i1");
+            d1_text = d1.innerText; //欢迎莅临指导
+            first_char = d1_text[0];
+            //字符串索引
+            sub_char = d1_text.slice(1,d1_text.length);
+            //字符串切片
+            new_str = sub_char + first_char;
+            //字符串拼接
+            d1.innerText = new_str
+            },000);
+
+    </script>
+</body>
+</html>
+
+///这个叫做跑马灯

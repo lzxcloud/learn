@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <p>这个实例展示了一个当input输入内容后 在list中添加的js实例</p>
+    <div>
+        <div>
+            <label>
+                <input type="text"/>
+                <input type="button" value="添加" onclick="AddElement(this);"/>
+            </label>
+        </div>
+        <div>
+            <ul id="commentlist">
+                <li>aaaa</li>
+                <li>bbbb</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function AddElement(ths) {
+            //获取输入的值
+            console.log(ths);
+            var val = ths.previousElementSibling.value;
+
+            //点击后置为空
+            //第一种形式 字符串拼接
+            ths.previousElementSibling.value =" ";
+            var commentlist = document.getElementById("commentlist");
+            var str ="<li>" + val + "</li>";
+            //'beforeBegin' 'afterBegin' 'beforEnd' 'afterEnd'
+            //beforeEnd 内部最后
+            //befordBengin 外部上边
+            //afterBegin    内部贴身
+            //afterEnd      外部贴墙
+            commentlist.insertAdjacentHTML("beforeEnd",str);
+        }
+    </script>
+</body>
+</html>
