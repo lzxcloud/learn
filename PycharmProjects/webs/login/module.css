@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.div{
+    display: block;
+}
+body{
+    color: #333;
+}
+
+.module_outer{
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.login_module{
+    height: 375px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -188px;
+}
+
+.login_module .w{
+    margin: 0 auto;
+    width: 700px;
+    position: relative;
+}
+/*.login_module .w .login_r{*/
+    /*position: absolute;*/
+    /*width: 350px ;*/
+    /*height: 100%;*/
+    /*background: white;*/
+    /*left:0;*/
+    /*top:0;*/
+    /*border-radius: 0 5px 5px 0;*/
+    /*float: left;*/
+/*}*/
+
+.header_module{
+    background: #e7ecf2;
+    padding: 0 10px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #abb6d2;
+    position: relative;
+}
+.body_module{
+    background: white;
+    height: 345px;
+    width: 350px;
+}
+.body_module .tab-box{
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #2559a4 ;
+}
+.body_module .uidlogin{
+    position: relative;
+    padding: 0 70px;
+
+}
+.body_module .uidlogin .pr{
+    position: relative;
+    margin-bottom: 15px;
+}
+.body_module .uidlogin .pr input{
+    width: 196px;
+    padding: 6px;
+    border: 1px solid #CDDDEF;
+    font-weight: bold;
+    outline: none;
+}
+input{
+    outline: none
+}
+.body_module .box-btn{
+    position: relative;
+    padding: 0 70px;
+    font-size:12px;
+}
+.body_module .box-btn .text{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.box-btn .btn{
+    text-align: center;
+    cursor: pointer;
+}
+.pub-btn{
+    width: 95px;
+    height: 31px;
+    line-height: 31px;
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 700;
+}
+.pub-icons{
+    background: url("bottom.png") no-repeat 0 -99px ;
+}
+
+.btn-close{
+    cursor: pointer;
+}
+.icons{
+    background: url("tip.png") no-repeat 0 0 ;
+}
+
+.dialog-btn-close:hover{
+    background-position: 0 -482px;
+}
+.dialog-btn-close{
+    width: 15px;
+    height: 15px;
+    display: block;
+}
+
+
+.login_module .w .register_l{
+    position: absolute;
+    width: 350px ;
+    height: 100%;
+    left: 350px;
+    top:0;
+    border-radius: 0 5px 5px 0;
+    float: right;
+    background: white;
+}
+
+.register_l .step-box{
+    text-align: center;
+    padding: 20px 0;
+    color: #abb6d2;
+    font-size: 14px;
+}
+.left-style{
+    border-left: 1px dotted #080808;
+    margin-left: -1px;
+}

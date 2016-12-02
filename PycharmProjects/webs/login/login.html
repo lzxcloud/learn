@@ -2,66 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+     <link type="text/css" rel="stylesheet" href="module.css" />
     <title>Title</title>
 </head>
 <body>
-    <div class="login_module">
+    <div class="module_outer">
+        <div class="login_module">
         <div class="w">
             <div class="login_r">
                 <div class="header_module">
                     <span>登录</span>
                 </div>
+                <div style="position:absolute;right:8px;top:8px;width:15px;height:15px;">
+                    <div class="btn-close icons dialog-btn-close"></div>
+                </div>
                 <div class="body_module">
                     <div class="tab-box">
-                        <span class="tab-mobilelogin" style="margin-right:10px;">用户名登录</span>
+                        <span class="tab-uidlogin" style="margin-right:10px;">用户名登录</span>
                     </div>
                     <div class="uidlogin">
                         <div class="err-msg"></div>
                             <div class="pr"><input type="text" name="username" placeholder="用户名"></div>
                             <div class="pr"><input type="password" name="passwd" placeholder="密码"></div>
-                        </div>
                     </div>
+
                     <div class="box-btn">
-                        <div class="text"></div>
-                        <div class="btn btn-login pub-icons pub-btn pub-btn-valid">
-                            <span>登录</span>
+                        <div class="text">
+                            <span>
+
+                                <input type="checkbox" value="1" checked="" style="width: auto; margin: 0;vertical-align: -2px">
+                                一个月内自动登录
+                            </span>
+                            <span style="position: absolute;right: 0;top: 0;">
+                                <a href="" style="color: #369">忘记密码?</a>
+                            </span>
+                        </div>
+                        <div class="btn btn-login pub-icons pub-btn" >
+                            <span >登录</span>
                             <span style="display:none;">
                                 <img src="/images/loading.gif">正在登录</span>
                         </div>
                     </div>
-                </div>
+                 </div>
             </div>
-
-
-
-
-
 
             <div class="register_l">
                 <div class="header_module">
                     <span>注册</span>
                 </div>
-                <div class="body_module">
-                    <div class="tab-box">
-                        <span>手机&&用户名注册</span>
+                <div class="body_module left-style">
+                    <div class="step-box">
+                        <span>用户注册</span>
                     </div>
-                    <div class="register">
+                    <div class="uidlogin">
                         <div class="err-msg"></div>
-                        <div class="pr">
-                            <span>+86</span>
-                            <input type="text" name="mobilenumber" placeholder="手机号">
-                        </div>
                         <div class="pr"><input type="text" name="username" placeholder="用户名"></div>
                         <div class="pr"><input type="password" name="passwd" placeholder="密码"></div>
                     </div>
-                    <div class="btn btn-register pub-icons pub-btn pub-btn-valid">
+                    <div class="box-btn">
+                        <div class="btn btn-register pub-icons pub-btn pub-btn-valid">
                         <span>下一步</span>
-                        span style="display:none;">
-                        <img src="/images/loading.gif">正在注册</span>
+                        <span style="display:none;">
+                        <img src="/images/loading.gif">正在注册
+                            </span>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </body>
 </html>
