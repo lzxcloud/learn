@@ -60,22 +60,6 @@ function CheckRegex(ths,name,action,id) {
         }
     }
 }
-function show_error_msg(flag) {
-    thss = document.getElementById("error-msg");
-    if(flag=="1"){
-        thss.classList.remove("hide");
-        thss.innerText = "请输入"+input_user_error[2] + input_passwd_error[2]
-        overflow =hide
-    }else if(flag=="2"){
-        thss.classList.remove("hide");
-        thss.innerText = input_user_error[2] + input_passwd_error[2] +"输入有误"
-    }
-    while (input_user_error[0]==true && input_passwd_error[0]==true){
-        if (input_user_error[0]==true && input_passwd_error[0]==true){
-            thss.classList.add("hide")
-        }
-    }
-}
 function login(){
     if (input_user_error[0]==true && input_passwd_error[0]==true) {
         show_error_msg("3");
@@ -95,5 +79,27 @@ function Register() {
         window.alert("请输入"+input_id_error);
     } else if (input_user_error[1]=="error"||input_passwd_error[1]== "error"||input_id_error[1]){
         window.alert(input_user_error[2]+input_passwd_error[2]+input_id_error[2]+"输入有误")
+    }
+}
+function show_error_msg(flag) {
+    thss = document.getElementById("error-msg");
+    while (input_user_error[0]==true && input_passwd_error[0]==true){
+        if (input_user_error[0]==true && input_passwd_error[0]==true){
+            thss.classList.add("hide")
+        }
+    }
+    if(flag=="1"){
+        thss.classList.remove("hide");
+        thss.innerText = "请输入"+input_user_error[2] + input_passwd_error[2]
+        overflow = hide
+    }else if(flag=="2"){
+        thss.classList.remove("hide");
+        thss.innerText = input_user_error[2] + input_passwd_error[2] +"输入有误"
+    }
+
+    while (input_user_error[0]==true && input_passwd_error[0]==true){
+        if (input_user_error[0]==true && input_passwd_error[0]==true){
+            thss.classList.add("hide")
+        }
     }
 }

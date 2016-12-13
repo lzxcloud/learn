@@ -1,29 +1,30 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.div{
-    display: block;
-}
-body{
-    color: #333;
-}
+/**{*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+/*.div{*/
+    /*display: block;*/
+/*}*/
+/*body{*/
+    /*color: #333;*/
+/*}*/
 
-.module_outer{
-    position: fixed;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-}
+/*.module_outer{*/
+    /*position: fixed;*/
+    /*z-index: 999;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: rgba(0,0,0,0.5);*/
+/*}*/
 .login_module{
     height: 375px;
     width: 100%;
-    position: absolute;
-    top: 50%;
-    margin-top: -188px;
+    position: fixed;
+    margin-top: 50%;
+    margin-left: -50%;
+    /*margin-top: -188px;*/
 }
 
 .login_module .w{
@@ -107,23 +108,24 @@ input{
     font-weight: 700;
 }
 .pub-icons{
-    background: url("bottom.png") no-repeat 0 -99px ;
+    background: url("../img/bottom.png") no-repeat 0 -99px ;
 }
 
 .btn-close{
     cursor: pointer;
 }
-.icons{
-    background: url("tip.png") no-repeat 0 0 ;
-}
-
-.dialog-btn-close:hover{
-    background-position: 0 -482px;
-}
 .dialog-btn-close{
     width: 15px;
     height: 15px;
     display: block;
+}
+
+.icons{
+    background: url("../img/tip.png") no-repeat 0 -499px ;
+}
+
+.dialog-btn-close:hover{
+    background-position: 0 -482px;
 }
 
 

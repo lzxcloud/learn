@@ -10,6 +10,7 @@
     <link type="text/css" rel="stylesheet" href="../static/css/index-top.css" />
     <link type="text/css" rel="stylesheet" href="../static/css/index-center.css" />
     <link type="text/css" rel="stylesheet" href="../static/css/index-foot.css"/>
+     <link type="text/css" rel="stylesheet" href="../static/css/module.css" />
 </head>
 <body>
     <div class="top">
@@ -205,16 +206,84 @@
             <div style="margin-top:6px;">版权所有：北京格致璞科技有限公司</div>
         </div>
     </div>
+
+
+
+
     <!--登录model对话框-->
     <div class="modal fade bs-example-modal-sm" id = "login" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
         <div class="modal-dialog modal-sm" role="document">
             <div class="modal-content">
-                <h1 align="center">登录</h1>
+                <div class="login_module">
+                    <div class="w">
+            <div class="login_r">
+                <div class="header_module">
+                    <span>登录</span>
+                </div>
 
-                    <input type="text" name="username"  id="username" placeholder="用户名">
-                    <input type="password" name="passwd" id="passwd" placeholder="密码" >
-                    <input type="checkbox" value="1" name="auto" id="auto">7天免登陆
-                    <button type="button" class="btn btn-primary" onclick="loginpush()">登录</button>
+                <div class="body_module">
+                    <div class="tab-box">
+                        <span class="tab-uidlogin" style="margin-right:10px;">用户名登录</span>
+                    </div>
+                    <div class="uidlogin">
+                        <div class="err-msg"></div>
+                            <div class="pr"><input type="text" name="username" placeholder="用户名"></div>
+                            <div class="pr"><input type="password" name="passwd" placeholder="密码"></div>
+                    </div>
+
+                    <div class="box-btn">
+                        <div class="text">
+                            <span>
+                                <input type="checkbox" value="1" checked="" style="width: auto; margin: 0;vertical-align: -2px">
+                                一个月内自动登录
+                            </span>
+                            <span style="position: absolute;right: 0;top: 0;">
+                                <a href="" style="color: #369">忘记密码?</a>
+                            </span>
+                        </div>
+                        <div class="btn btn-login pub-icons pub-btn" >
+                            <span >登录</span>
+                            <span style="display:none;">
+                                <img src="/images/loading.gif">正在登录</span>
+                            <button type="button" class="btn btn-primary" onclick="loginpush()">登录</button>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="register_l">
+                <div class="header_module">
+                    <span>注册</span>
+                </div>
+                <div style="position:absolute;right:8px;top:8px;width:15px;height:15px;">
+                    <div class="btn-close icons dialog-btn-close"></div>
+                </div>
+                <div class="body_module left-style">
+                    <div class="step-box">
+                        <span>用户注册</span>
+                    </div>
+                    <div class="uidlogin">
+                        <div class="err-msg"></div>
+                        <div class="pr"><input type="text" name="username" placeholder="用户名"></div>
+                        <div class="pr"><input type="password" name="passwd" placeholder="密码"></div>
+                    </div>
+                    <div class="box-btn">
+                        <div class="btn btn-register pub-icons pub-btn pub-btn-valid">
+                        <span>下一步</span>
+                        <span style="display:none;">
+                        <img src="/images/loading.gif">正在注册
+                            </span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+                <!--<h1 align="center">登录</h1>-->
+                    <!---->
+                    <!--<input type="text" name="username"  id="username" placeholder="用户名">-->
+                    <!--<input type="password" name="passwd" id="passwd" placeholder="密码" >-->
+                    <!--<input type="checkbox" value="1" name="auto" id="auto">7天免登陆-->
+                    <!--<button type="button" class="btn btn-primary" onclick="loginpush()">登录</button>-->
             </div>
         </div>
     </div>
@@ -268,6 +337,7 @@
                 }
             });
         }
+
     </script>
 </body>
 </html>
