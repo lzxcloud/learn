@@ -29,8 +29,7 @@ class IndexHandler(BaseHandler):
         login_user = self.current_user
         if login_user:
             self.render("index.html", username=login_user ,state=True, news_list=NEWS_LIST)
-        else:
-            self.render("index.html",  state = False ,news_list=NEWS_LIST)
+        else:         self.render("index.html",  state = False ,news_list=NEWS_LIST)
 
 
 class LoginHandler(tornado.web.RequestHandler):
