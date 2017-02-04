@@ -4,7 +4,6 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import sessionmaker
-print(sqlalchemy.__version__)
 
 
 engine = create_engine("mysql+pymysql://root:123456@192.168.0.99:3306/userinfo")

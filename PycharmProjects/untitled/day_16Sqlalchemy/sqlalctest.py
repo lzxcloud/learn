@@ -46,6 +46,10 @@ class User(Base):
     name = Column(String(20))
     fullname = Column(String(20))
     password = Column(String(20))
+
+
+    #创建定长的
+    info =Column(chr(30))
 #__repr__只是为了格式化用的
     def __repr__(self):
         return "<User(name='%s', fullname='%s', password='%s')>" % (
